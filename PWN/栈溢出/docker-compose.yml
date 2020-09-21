@@ -1,0 +1,6 @@
+version: "3.2"
+services:
+  note:
+    image: registry.cn-hangzhou.aliyuncs.com/n1book/pwn-stack:latest
+    ports:
+      - 20000:20000

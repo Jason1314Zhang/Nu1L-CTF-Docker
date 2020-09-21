@@ -1,0 +1,6 @@
+version: "3.2"
+services:
+  fsb:
+    image: registry.cn-hangzhou.aliyuncs.com/n1book/pwn-fsb:latest
+    ports:
+      - 20001:20001
