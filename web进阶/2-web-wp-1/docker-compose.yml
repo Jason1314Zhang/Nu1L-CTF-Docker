@@ -1,0 +1,29 @@
+# SSRF漏洞
+# SSRF Training
+# 题目描述:
+# web容器中存在一个flag，mysql中存在一个管理员账号密码，其余容器中均没有特定flag
+# mysql容器中内置 tcpdump
+# vulnweb容器中内置一个 fpm.py 攻击脚本
+
+# n1book{ug9thaevi2JoobaiLiiLah4zae6fie4r}
+version: "3"
+services:
+  web:
+    image: registry.cn-beijing.aliyuncs.com/n1book/web-ssrf-1:latest
+    depends_on: 
+      - redis
+      - vuln
+      - mysql
+    ports:
+      - "8233:80"
+
+  redis:
+    image: registry.cn-beijing.aliyuncs.com/n1book/web-ssrf-2:latest
+
+  vuln:
+    image: registry.cn-beijing.aliyuncs.com/n1book/web-ssrf-3:latest
+
+  mysql:
+    image: registry.cn-beijing.aliyuncs.com/n1book/web-ssrf-4:latest
+    environment:
+      - MYSQL_RANDOM_ROOT_PASSWORD=yes

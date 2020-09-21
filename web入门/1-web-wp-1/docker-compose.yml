@@ -1,0 +1,9 @@
+# 信息搜集
+# n1book{info_1s_v3ry_imp0rtant_hack}
+version: '3.2'
+
+services:
+  web:
+    image: registry.cn-hangzhou.aliyuncs.com/n1book/web-information-backk:latest
+    ports:
+      - 80:80

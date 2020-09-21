@@ -1,0 +1,15 @@
+# 逻辑漏洞
+# FLAG{you_can_got_it}
+version: '3.2'
+
+services:
+  mysql:
+    image: registry.cn-hangzhou.aliyuncs.com/n1book/web-logic-mysql:latest
+    environment:
+      -  MYSQL_ROOT_PASSWORD=Cy4Qndv95KKrZCT1
+  web:
+    image: registry.cn-hangzhou.aliyuncs.com/n1book/web-logic-web:latest
+    ports:
+      - 80:80
+    links:
+      - mysql

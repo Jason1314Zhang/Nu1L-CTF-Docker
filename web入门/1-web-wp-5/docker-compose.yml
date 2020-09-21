@@ -1,0 +1,9 @@
+# 任意文件读
+# n1book{afr_1_solved}
+version: '3.2'
+
+services:
+  web:
+    image: registry.cn-hangzhou.aliyuncs.com/n1book/web-file-read-1:latest
+    ports:
+      - 80:80

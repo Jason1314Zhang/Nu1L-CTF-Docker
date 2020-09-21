@@ -1,0 +1,8 @@
+# 文件上传
+# n1book{ThisIsUpLoadToPicfl4g}
+version: '3.2'
+services:
+  upload:
+    image: registry.cn-hangzhou.aliyuncs.com/n1book/web-upload:latest
+    ports:
+      - 80:80

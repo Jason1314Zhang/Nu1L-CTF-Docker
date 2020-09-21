@@ -1,0 +1,13 @@
+# Python里的SSRF
+# 题目描述:
+# 尝试访问到容器内部的 8000 端口和 url path /api/internal/secret 即可获取 flag
+# n1book{1132e28b5433c878}
+version: "3"
+services:
+  ssrf-vuln:
+    image: registry.cn-hangzhou.aliyuncs.com/n1book/python-ssrf
+    container_name: ssrf-vuln
+    restart: always
+    dns: 8.8.8.8
+    ports:
+      - "8000:8000"

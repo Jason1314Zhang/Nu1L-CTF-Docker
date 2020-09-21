@@ -1,0 +1,16 @@
+# XSS漏洞
+# Author: 画船听雨
+
+# XSS闯关
+# 题目描述:
+# 你能否过关斩将解决所有XSS问题最终获得flag呢？
+# n1book{xss_is_so_interesting}
+
+
+version: "3.2"
+
+services:
+  xss:
+    image: registry.cn-hangzhou.aliyuncs.com/n1book/web-xss:latest
+    ports:
+      - 3000:3000

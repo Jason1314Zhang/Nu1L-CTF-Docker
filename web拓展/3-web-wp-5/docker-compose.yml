@@ -1,0 +1,14 @@
+# 密码学及逆向知识
+# Author: Muuu Nya
+
+# Encrypted Flask
+# 题目描述
+# 跟你说了客户端session不安全, 你还硬要用. 没关系, 我加了密呀.
+# n1book{Crypt0_5essi0n_W1th_3CB_1s_Uns3cure}
+version: "3.2"
+
+services:
+  web:
+    image: registry.cn-hangzhou.aliyuncs.com/n1book/web-crypto-cbc:latest
+    ports:
+      - 80:80

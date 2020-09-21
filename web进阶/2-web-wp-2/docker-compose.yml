@@ -1,0 +1,16 @@
+# 命令执行漏洞
+# Author: L3m0n
+
+# 死亡ping命令
+# 题目描述:
+# 路由器管理台经常存在的网络ping测试，开发者常常会禁用大量的恶意字符串，试试看如何绕过呢？
+version: "3.2"
+
+services:
+  converter:
+    image: registry.cn-hangzhou.aliyuncs.com/n1book/web-command:latest
+    ports:
+      - 80:80
+
+
+# n1book{6fa82809179d7f19c67259aa285a7729}

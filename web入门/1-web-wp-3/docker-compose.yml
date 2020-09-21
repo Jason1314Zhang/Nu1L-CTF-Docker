@@ -1,0 +1,9 @@
+# SQL注入
+# n1book{union_select_is_so_cool}
+version: '3.2'
+
+services:
+  web:
+    image: registry.cn-hangzhou.aliyuncs.com/n1book/web-sql-1:latest
+    ports:
+      - 80:80

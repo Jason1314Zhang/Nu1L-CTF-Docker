@@ -1,0 +1,10 @@
+# SSTI
+# n1book{eddb84d69a421a82}
+version: "3"
+services:
+  ssti-vuln:
+    image: registry.cn-hangzhou.aliyuncs.com/n1book/python-ssti
+    container_name: ssti-vuln
+    restart: always
+    ports:
+      - "8000:8000"

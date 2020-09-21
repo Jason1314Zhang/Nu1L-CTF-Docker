@@ -1,0 +1,11 @@
+# thinkphp反序列化利用链
+# 题目描述:
+# 对一个框架的反序列化进行利用链挖掘
+# n1book{de70641304640057390e8fabc8b515bf}
+version: "3.2"
+
+services:
+  converter:
+    image: registry.cn-hangzhou.aliyuncs.com/n1book/web-unserialize:latest
+    ports:
+      - 80:80
